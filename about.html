@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Growvia Digital is a marketing agency focused on clarity, creative campaigns, and measurable growth for brands.">
+  <meta name="theme-color" content="#0a66c2">
+  <title>About | Growvia Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <div style="background: #10b981; color: white; text-align: center; padding: 8px; font-size: 14px; font-weight: 600;">
+    ✨ Website Upgraded! New responsive design, mobile navigation, and improved styling ✨
+  </div>
+    <div class="topbar">
+      <p>Meet the team behind powerful campaigns and sustainable growth.</p>
+    </div>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="brand">Growvia Digital</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="hero-content">
+        <span class="hero-badge">About Us</span>
+        <h1>We help brands build a strong online presence and consistent growth.</h1>
+        <p>Growvia Digital combines marketing strategy, creative thinking, and data to deliver campaigns that work.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="section-label">Who We Are</span>
+        <h2>A marketing agency with one goal: help your business grow.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Our Story</h3>
+          <p>We started Growvia Digital to make modern marketing accessible for businesses that want more impact online.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>To deliver measurable marketing solutions that increase leads, improve conversions, and grow revenue.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Approach</h3>
+          <p>We blend creative strategy with analytics to build campaigns that perform from day one.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="section-header">
+        <span class="section-label">Why Choose Us</span>
+        <h2>We focus on clarity, speed, and results for every campaign.</h2>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <h3>Proven Results</h3>
+          <p>We measure success with real business outcomes and return on investment.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Transparent Process</h3>
+          <p>You receive clear timelines, easy reporting, and direct support.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Creative Execution</h3>
+          <p>Campaigns are backed by fresh concepts grounded in audience research.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-panel">
+      <div class="cta-content">
+        <h2>Ready to build a stronger brand online?</h2>
+        <p>Let’s work together to create a marketing program made for your growth goals.</p>
+        <a href="contact.html" class="btn btn-primary">Talk to Our Team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Growvia Digital</h3>
+        <p>Digital marketing services that help brands grow online with clarity, consistency, and measurable outcomes.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: growviadigital15@email.com</p>
+        <p>Phone: +92 3204348455</p>
+        <p>Location: Pakistan</p>
+      </div>
+    </div>
+    <p class="footer-note">© 2026 Growvia Digital. All rights reserved.</p>
+  </footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>
