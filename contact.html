@@ -117,14 +117,36 @@
     <p class="footer-note">© 2026 Growvia Digital. All rights reserved.</p>
   </footer>
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.getElementById('navLinks');
-    if (menuToggle && navLinks) {
-      menuToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('open');
-        menuToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-  </script>
+    
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get('success') === 'true') {
+    const successBox = document.createElement('div');
+    successBox.textContent = 'Message sent successfully!';
+    successBox.style.background = '#10b981';
+    successBox.style.color = '#fff';
+    successBox.style.padding = '12px 18px';
+    successBox.style.margin = '20px auto';
+    successBox.style.maxWidth = '600px';
+    successBox.style.borderRadius = '8px';
+    successBox.style.textAlign = 'center';
+    successBox.style.fontWeight = '600';
+
+    const contactSection = document.querySelector('.contact-section');
+    contactSection.prepend(successBox);
+
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
 </body>
 </html>
