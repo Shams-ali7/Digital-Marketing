@@ -823,3 +823,9 @@ button:hover,
   visibility: visible;
   transform: translateY(0);
 }
+.navbar.scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.navbar.scrolled {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
