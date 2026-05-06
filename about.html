@@ -24,13 +24,43 @@
         <span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <li class="dropdown">
+    <a href="index.html">Home</a>
+    <ul class="dropdown-menu">
+      <li><a href="index.html#hero">Hero Section</a></li>
+      <li><a href="index.html#services-preview">Services</a></li>
+      <li><a href="index.html#cta">Call To Action</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="services.html">Services</a>
+    <ul class="dropdown-menu">
+      <li><a href="services.html#seo">SEO</a></li>
+      <li><a href="services.html#meta-ads">Meta Ads</a></li>
+      <li><a href="services.html#web-design">Web Design</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="about.html" class="active">About</a>
+    <ul class="dropdown-menu">
+      <li><a href="about.html#about-us">About Us</a></li>
+      <li><a href="about.html#mission">Mission</a></li>
+      <li><a href="about.html#team">Team</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="contact.html">Contact</a>
+    <ul class="dropdown-menu">
+      <li><a href="contact.html#contact-form">Form</a></li>
+      <li><a href="contact.html#contact-info">Info</a></li>
+      <li><a href="contact.html#map">Map</a></li>
+    </ul>
+  </li>
+</ul>
     </nav>
-  </header>
 
   <main>
     <section class="hero hero-page">
@@ -41,7 +71,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="about-us" class="section">
       <div class="section-header">
         <span class="section-label">Who We Are</span>
         <h2>A marketing agency with one goal: help your business grow.</h2>
@@ -62,7 +92,7 @@
       </div>
     </section>
 
-    <section class="section why-section">
+    <section id="mission" class="section why-section">
       <div class="section-header">
         <span class="section-label">Why Choose Us</span>
         <h2>We focus on clarity, speed, and results for every campaign.</h2>
@@ -83,7 +113,7 @@
       </div>
     </section>
 
-    <section class="section cta-panel">
+    <section id="team" class="section cta-panel">
       <div class="cta-content">
         <h2>Ready to build a stronger brand online?</h2>
         <p>Let’s work together to create a marketing program made for your growth goals.</p>

@@ -24,12 +24,43 @@
         <span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+  <li class="dropdown">
+    <a href="index.html">Home</a>
+    <ul class="dropdown-menu">
+      <li><a href="index.html#hero">Hero Section</a></li>
+      <li><a href="index.html#services-preview">Services</a></li>
+      <li><a href="index.html#cta">Call To Action</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="services.html">Services</a>
+    <ul class="dropdown-menu">
+      <li><a href="services.html#seo">SEO</a></li>
+      <li><a href="services.html#meta-ads">Meta Ads</a></li>
+      <li><a href="services.html#web-design">Web Design</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="about.html">About</a>
+    <ul class="dropdown-menu">
+      <li><a href="about.html#about-us">About Us</a></li>
+      <li><a href="about.html#mission">Mission</a></li>
+      <li><a href="about.html#team">Team</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown">
+    <a href="contact.html" class="active">Contact</a>
+    <ul class="dropdown-menu">
+    <li><a href="contact.html#contact-form">Form</a></li>
+    <li><a href="contact.html#contact-info">Info</a></li>
+    <li><a href="contact.html#map">Map</a></li>
+    </ul>
+  </li>
+</ul>
+  </nav>
   
 
   <main>
@@ -41,7 +72,7 @@
       </div>
     </section>
 
-    <section class="section contact-section">
+    <section id="contact-form" class="section contact-section">
       <div class="section-header">
         <span class="section-label">Get In Touch</span>
         <h2>Reach out and start growing your digital presence.</h2>
@@ -50,7 +81,7 @@
       <div class="contact-grid">
         <div class="contact-card contact-form-card">
           <h3>Send a Message</h3>
-          <form action="https://formspree.io/f/xaqvqbno" method="POST" target="_blank">
+          <form action="https://formspree.io/f/xaqvqbno" method="POST">
           <input type="hidden" name="_next" value="https://fastidious-macaron-4617f7.netlify.app/contact.html?success=true">
           <input type="hidden" name="_subject" value="New message from website contact form">
             <label>
@@ -73,12 +104,12 @@
           </form>
         </div>
 
-        <div class="contact-card contact-info-card">
+        <div id="contact-info" class="contact-card contact-info-card">
           <h3>Contact Information</h3>
           <p><strong>Email:</strong> growviadigital15@email.com</p>
           <p><strong>Phone:</strong> +92 3204348455</p>
           <p><strong>Location:</strong> Islamabad, Pakistan</p>
-          <div class="map-card">
+          <div id="map" class="map-card">
             <iframe class="map-frame" src="https://www.openstreetmap.org/export/embed.html?bbox=73.005%2C33.678%2C73.09%2C33.698&layer=mapnik&marker=33.688%2C73.047" loading="lazy"></iframe>
             <a href="https://www.openstreetmap.org/?mlat=33.688&mlon=73.047#map=15/33.688/73.047" target="_blank" rel="noopener">View larger map</a>
           </div>
