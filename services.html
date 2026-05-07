@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <section id="seo" class="section">
+    <section id="seo" class="section reveal">
       <div class="section-header">
         <span class="section-label">What We Do</span>
         <h2>Services designed to attract more customers and improve ROI.</h2>
@@ -108,7 +108,7 @@
       </div>
     </section>
 
-    <section id="meta-ads" class="section why-section">
+    <section id="meta-ads" class="section why-section reveal">
       <div class="section-header">
         <span class="section-label">How We Work</span>
         <h2>Our process is simple, strategic, and focused on results.</h2>
@@ -129,7 +129,7 @@
       </div>
     </section>
 
-    <section id="web-design" class="section cta-panel">
+    <section id="web-design" class="section cta-panel reveal">
       <div class="cta-content">
         <h2>Want a marketing plan made for your business?</h2>
         <p>Let’s connect and build a campaign that delivers measurable growth.</p>
@@ -160,6 +160,12 @@
     </div>
     <p class="footer-note">© 2026 Growvia Digital. All rights reserved.</p>
   </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+  ↑
+</button>
+  <a href="https://wa.me/923204348455" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  WhatsApp
+</a>
   <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.getElementById('navLinks');
@@ -209,6 +215,40 @@
       navbar.classList.remove('scrolled');
     }
   });
+ const revealElements = document.querySelectorAll('.reveal');
+
+const revealOnScroll = () => {
+  revealElements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight - 80) {
+      element.classList.add('active');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (!backToTop) return;
+
+  if (window.scrollY > 250) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 </script>
 </body>
 </html>

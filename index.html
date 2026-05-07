@@ -90,7 +90,7 @@
 </div>
     </section>
 
-    <section id="services-preview" class="section">
+    <section id="services-preview" class="section reveal">
       <div class="section-header">
         <span class="section-label">Our Expertise</span>
         <h2>Modern marketing services for businesses that want to grow.</h2>
@@ -109,9 +109,10 @@
           <p>Run high-performing ads on Google and social platforms that bring qualified leads and sales.</p>
         </article>
       </div>
+      </div>
     </section>
 
-    <section class="section team-section">
+    <section class="section team-section reveal">
       <div class="section-header">
         <span class="section-label">Meet the Team</span>
         <h2>Experienced marketers dedicated to your growth.</h2>
@@ -135,7 +136,7 @@
       </div>
     </section>
 
-    <section class="section why-section">
+    <section class="section why-section reveal">
       <div class="section-header">
         <span class="section-label">Why Us</span>
         <h2>Why Growvia Digital is the right partner for your business.</h2>
@@ -160,7 +161,7 @@
       </div>
     </section>
 
-    <section class="section testimonial-section">
+    <section class="section testimonial-section reveal">
       <div class="section-header">
         <span class="section-label">Testimonials</span>
         <h2>Trusted by brands that want real growth.</h2>
@@ -176,8 +177,37 @@
         </blockquote>
       </div>
     </section>
+    <section class="section faq-section reveal" id="faq">
+  <div class="section-header">
+    <span class="section-label">FAQ</span>
+    <h2>Common questions from clients before starting.</h2>
+  </div>
 
-    <section id="cta" class="section cta-panel">
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question">How long does it take to see results?</button>
+      <div class="faq-answer">
+        <p>Paid campaigns can start generating results quickly, while SEO usually takes longer depending on competition and goals.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you work with small businesses?</button>
+      <div class="faq-answer">
+        <p>Yes. We work with startups, local businesses, and growing brands that want measurable digital growth.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you provide custom marketing plans?</button>
+      <div class="faq-answer">
+        <p>Yes. Every strategy is built around your business goals, audience, and budget.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="cta" class="section cta-panel reveal">
       <div class="cta-content">
         <h2>Ready to turn digital traffic into business growth?</h2>
         <p>Speak with our marketing experts and get a tailored growth plan for your company.</p>
@@ -208,6 +238,12 @@
     </div>
     <p class="footer-note">© 2026 Growvia Digital. All rights reserved.</p>
   </footer>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+  ↑
+</button>
+  <a href="https://wa.me/923204348455" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  WhatsApp
+</a>
   <script>
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.getElementById('navLinks');
@@ -287,6 +323,49 @@ const runCounters = () => {
 };
 
 window.addEventListener('load', runCounters);
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+const revealElements = document.querySelectorAll('.reveal');
+
+const revealOnScroll = () => {
+  revealElements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < window.innerHeight - 80) {
+      element.classList.add('active');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (!backToTop) return;
+
+  if (window.scrollY > 250) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
 </script>
 </body>
 </html>
