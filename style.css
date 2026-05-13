@@ -1347,3 +1347,152 @@ body.dark-mode .site-footer {
   border-color: #0a66c2;
   box-shadow: 0 0 0 4px rgba(10,102,194,0.12);
 }
+
+/* =========================
+   DARK MODE FULL FIX
+========================= */
+
+body.dark-mode {
+  --background: #0f172a;
+  --surface: #1e293b;
+  --surface-strong: #162033;
+  --text: #f1f5f9;
+  --muted: #cbd5e1;
+  --border: rgba(255,255,255,0.08);
+
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+/* GENERAL TEXT */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode label,
+body.dark-mode a {
+  color: #f1f5f9;
+}
+
+/* MUTED TEXT */
+
+body.dark-mode .section-label,
+body.dark-mode .hero p,
+body.dark-mode .service-card p,
+body.dark-mode .benefit-card p,
+body.dark-mode .about-card p,
+body.dark-mode .testimonial-card p,
+body.dark-mode .blog-content p,
+body.dark-mode .pricing-card li,
+body.dark-mode .footer-note {
+  color: #cbd5e1;
+}
+
+/* NAVBAR */
+
+body.dark-mode .site-header,
+body.dark-mode .navbar,
+body.dark-mode .nav-links {
+  background: #0f172a;
+}
+
+body.dark-mode .nav-links a {
+  color: #f1f5f9;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+  background: rgba(255,255,255,0.08);
+  color: #60a5fa;
+}
+
+/* DROPDOWN */
+
+body.dark-mode .dropdown-menu {
+  background: #1e293b;
+}
+
+body.dark-mode .dropdown-menu li a {
+  color: #f1f5f9;
+}
+
+/* CARDS */
+
+body.dark-mode .service-card,
+body.dark-mode .benefit-card,
+body.dark-mode .team-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .about-card,
+body.dark-mode .faq-item,
+body.dark-mode .pricing-card,
+body.dark-mode .portfolio-card,
+body.dark-mode .blog-card,
+body.dark-mode .booking-card,
+body.dark-mode .contact-card,
+body.dark-mode .contact-form-card {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: rgba(255,255,255,0.08);
+}
+
+/* INPUTS */
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #0f172a;
+  color: #f1f5f9;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* FAQ */
+
+body.dark-mode .faq-question {
+  color: #f1f5f9;
+}
+
+/* BLOG */
+
+body.dark-mode .blog-tag {
+  background: rgba(96,165,250,0.12);
+  color: #60a5fa;
+}
+
+/* FOOTER */
+
+body.dark-mode .site-footer {
+  background: #020617;
+}
+
+body.dark-mode .site-footer a {
+  color: #cbd5e1;
+}
+
+/* MAP */
+
+body.dark-mode .map-card {
+  background: #1e293b;
+}
+
+/* TRUST STRIP */
+
+body.dark-mode .trust-strip {
+  background: #162033;
+}
+
+/* LOGO IMAGES */
+
+body.dark-mode .logo-track img {
+  background: #1e293b;
+  border-color: rgba(255,255,255,0.08);
+}
