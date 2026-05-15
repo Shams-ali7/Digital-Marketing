@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
+  <div class="loader-wrapper">
+  <div class="loader"></div>
+</div>
   <div style="background: #10b981; color: white; text-align: center; padding: 8px; font-size: 14px; font-weight: 600;">
     ✨ Website Upgraded! New responsive design, mobile navigation, and improved styling ✨
   </div>
@@ -19,7 +22,9 @@
       <p>Full-service marketing solutions for stronger online growth.</p>
     </div>
     <nav class="navbar" aria-label="Main navigation">
-      <a href="index.html" class="brand">Growvia Digital</a>
+      <a href="#" class="brand">
+  <img src="d:\Downloads\growvai-logo.png.png" alt="Growvia Digital Logo">
+</a>
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
       </button>
@@ -281,6 +286,14 @@ themeToggle.addEventListener("click", () => {
   }
 
 });
+window.addEventListener("load", () => {
+
+  const loader = document.querySelector(".loader-wrapper");
+
+  loader.classList.add("hidden");
+
+});
+
 
 </script>
 </body>
