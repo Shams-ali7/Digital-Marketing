@@ -1534,8 +1534,8 @@ body.dark-mode .logo-track img {
 body.dark-mode .loader-wrapper {
   background: #0f172a;
 }
-.brand img {
-  height: 46px;
-  width: auto;
+.site-logo{
+  width: 180px;
+  height: auto;
   display: block;
 }
