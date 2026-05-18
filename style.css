@@ -1539,3 +1539,43 @@ body.dark-mode .loader-wrapper {
   height: auto;
   display: block;
 }
+@media (max-width: 640px) {
+
+  .section {
+    padding: 55px 18px;
+  }
+
+  .hero {
+    padding: 70px 18px 50px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  h2 {
+    line-height: 1.3;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .service-card,
+  .pricing-card,
+  .testimonial-card,
+  .portfolio-card,
+  .blog-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .navbar {
+    padding: 14px 16px;
+  }
+
+  .site-logo {
+    width: 140px;
+  }
+
+}
