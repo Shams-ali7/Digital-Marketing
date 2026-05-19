@@ -23,7 +23,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: var(--text);
-  background: linear-gradient(135deg, #e0f2fe 0%, #f3f5f8 100%);
+  background: #ffffff;
   line-height: 1.7;
 }
 
